@@ -1,24 +1,28 @@
 {
   "title": "PDF Signer Input",
+  "description": "Input configuration for the PDF Signer actor, which converts an XLSX file to PDF and adds a signature and date.",
   "type": "object",
   "schemaVersion": 1,
   "properties": {
     "xlsx_key": {
-      "type": "string",
       "title": "XLSX File Key",
-      "description": "Key for XLSX file in key-value store"
+      "type": "string",
+      "description": "The key for the XLSX file stored in the Apify key-value store.",
+      "editor": "text"
     },
     "signature_key": {
-      "type": "string",
       "title": "Signature Image Key",
-      "description": "Key for signature image",
-      "default": "signature.png"
+      "type": "string",
+      "description": "The key for the signature image stored in the Apify key-value store.",
+      "default": "signature.png",
+      "editor": "text"
     },
     "blank_image_key": {
-      "type": "string",
       "title": "Blank Image Key",
-      "description": "Key for blank image",
-      "default": "line.png"
+      "type": "string",
+      "description": "The key for the blank image used to cover existing dates in the PDF, stored in the Apify key-value store.",
+      "default": "line.png",
+      "editor": "text"
     }
   },
   "required": ["xlsx_key"]
