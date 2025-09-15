@@ -8,21 +8,21 @@
       "title": "XLSX File Key",
       "type": "string",
       "description": "The key for the XLSX file stored in the Apify key-value store.",
-      "editor": "text"
+      "editor": "textfield"
     },
     "signature_key": {
       "title": "Signature Image Key",
       "type": "string",
       "description": "The key for the signature image stored in the Apify key-value store.",
       "default": "signature.png",
-      "editor": "text"
+      "editor": "textfield"
     },
     "blank_image_key": {
       "title": "Blank Image Key",
       "type": "string",
       "description": "The key for the blank image used to cover existing dates in the PDF, stored in the Apify key-value store.",
       "default": "line.png",
-      "editor": "text"
+      "editor": "textfield"
     }
   },
   "required": ["xlsx_key"]
