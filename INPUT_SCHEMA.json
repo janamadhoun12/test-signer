@@ -1,0 +1,11 @@
+{
+  "title": "PDF Signer Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "xlsx_key": { "type": "string", "description": "Key for XLSX file in key-value store" },
+    "signature_key": { "type": "string", "description": "Key for signature image", "default": "signature.png" },
+    "blank_image_key": { "type": "string", "description": "Key for blank image", "default": "line.png" }
+  },
+  "required": ["xlsx_key"]
+}
